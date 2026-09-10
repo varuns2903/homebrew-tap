@@ -1,25 +1,25 @@
 class DatapipeCli < Formula
   desc "A high-performance, streaming-first CLI for structured data"
   homepage "https://github.com/varuns2903/datapipe"
-  version "0.1.1"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/varuns2903/datapipe/releases/download/v0.1.1/datapipe-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "68a44a2334aa2a41f699a57df74e47e0861b79cd46458ae1f87e30cc9c6bd62e"
+      url "https://github.com/varuns2903/datapipe/releases/download/v0.2.0/datapipe-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "d9e2b7d1dc8b6cbd59ad9d65f2d3f08139d5851fb4873760630b6c2393716ec8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/varuns2903/datapipe/releases/download/v0.1.1/datapipe-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "985df6a1736c3474ab7674428bb85315aa66397a9ea1e0d5093dcb8d527358c6"
+      url "https://github.com/varuns2903/datapipe/releases/download/v0.2.0/datapipe-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "41432119a2d8bbecdb6385edd0d932081e95e3427638a560bbe2d85a09646593"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/varuns2903/datapipe/releases/download/v0.1.1/datapipe-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4316894e19f78a8170ba5ff688445ff4284d3e9f98036cf59e17e5aa4d4f666c"
+      url "https://github.com/varuns2903/datapipe/releases/download/v0.2.0/datapipe-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e5e46de5f6a988f160d002b15af802fe27ae83536a8e08113712e0dc503e190c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/varuns2903/datapipe/releases/download/v0.1.1/datapipe-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5d12d4d88a20b634cb9e4b0b691bd3c8839bb0a05e85b661ff8ce21d74b6cd75"
+      url "https://github.com/varuns2903/datapipe/releases/download/v0.2.0/datapipe-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f8db02c4e6e39166a07d98caea569b9ffa36f3276f03a4984d75f8178bfc322e"
     end
   end
   license "MIT"
