@@ -1,0 +1,35 @@
+name: tetromino formula
+
+# Install, test and audit the tetromino formula whenever it changes.
+# (Other formulas in this tap are updated by their own release tooling.)
+on:
+  push:
+    paths: ['Formula/tetromino.rb', '.github/workflows/tetromino.yml']
+  pull_request:
+    paths: ['Formula/tetromino.rb', '.github/workflows/tetromino.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.runner }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-24.04, ubuntu-24.04-arm]
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@main
+
+      - name: Install
+        run: brew install varuns2903/tap/tetromino
+
+      - name: Test
+        run: brew test varuns2903/tap/tetromino
+
+      - name: Audit and style
+        run: |
+          brew audit --strict --online --formula varuns2903/tap/tetromino
+          brew style --formula varuns2903/tap/tetromino
