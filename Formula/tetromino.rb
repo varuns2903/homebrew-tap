@@ -1,7 +1,6 @@
 class Tetromino < Formula
   desc "Falling-block puzzle game for the terminal"
   homepage "https://github.com/varuns2903/tetromino"
-  version "1.0.1"
   license "MIT"
 
   livecheck do

@@ -17,6 +17,6 @@ brew install tetromino
 ## Updating tetromino
 
 After a new tetromino release `vX.Y.Z` is published, in
-`Formula/tetromino.rb` change the `version`, both `url`s and both `sha256`s
+`Formula/tetromino.rb` change both `url`s and both `sha256`s
 (the values are in the release's `SHA256SUMS.txt`), then push. The
 `tetromino formula` workflow installs, tests and audits it.
