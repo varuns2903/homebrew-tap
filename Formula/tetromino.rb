@@ -1,6 +1,8 @@
 class Tetromino < Formula
   desc "Falling-block puzzle game for the terminal"
   homepage "https://github.com/varuns2903/tetromino"
+  # Explicit: Homebrew's URL scanner misreads "1.1.0-linux-x86_64" as 86.64.
+  version "1.1.0"
   license "MIT"
 
   livecheck do
@@ -14,12 +16,12 @@ class Tetromino < Formula
   # dependencies. Linux only for now.
   on_linux do
     on_intel do
-      url "https://github.com/varuns2903/tetromino/releases/download/v1.0.1/tetromino-1.0.1-linux-x86_64.tar.gz"
-      sha256 "cc64db63a681471790fea360cce603099b118a5bf819113bdad0a0890d1c542b"
+      url "https://github.com/varuns2903/tetromino/releases/download/v1.1.0/tetromino-1.1.0-linux-x86_64.tar.gz"
+      sha256 "96d6881a24699be19e33318bb4488431505261533eb646c0dce8aa529ee9a946"
     end
     on_arm do
-      url "https://github.com/varuns2903/tetromino/releases/download/v1.0.1/tetromino-1.0.1-linux-aarch64.tar.gz"
-      sha256 "b3f4b8e5f155e0934cd8d660cb9269272428f134c1f1173811623a17e5dc7166"
+      url "https://github.com/varuns2903/tetromino/releases/download/v1.1.0/tetromino-1.1.0-linux-aarch64.tar.gz"
+      sha256 "ed14f88a14f23365c6fcb81e1882e30ba77a222277a1332e94c349093521cd68"
     end
   end
 
