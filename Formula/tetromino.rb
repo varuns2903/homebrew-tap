@@ -1,8 +1,6 @@
 class Tetromino < Formula
   desc "Falling-block puzzle game for the terminal"
   homepage "https://github.com/varuns2903/tetromino"
-  # Explicit: Homebrew's URL scanner misreads "1.1.0-linux-x86_64" as 86.64.
-  version "1.1.0"
   license "MIT"
 
   livecheck do
